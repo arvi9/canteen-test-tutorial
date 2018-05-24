@@ -1,0 +1,5 @@
+GRANT ALL ON *.* to root@'%' IDENTIFIED BY 'mysql@123';
+
+sudo gunicorn -b 0.0.0.0:8000 chms:app
+
+http://192.168.11.33:8000/
